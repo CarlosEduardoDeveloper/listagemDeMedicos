@@ -1,5 +1,6 @@
 package med.voll.api.controller;
 
+import med.voll.api.domain.endereco.DadosEndereco;
 import med.voll.api.domain.endereco.Endereco;
 import med.voll.api.domain.medico.*;
 import org.junit.jupiter.api.DisplayName;
@@ -82,6 +83,18 @@ class MedicoControllerTest {
 
         assertThat(response.getStatus()).isEqualTo(HttpStatus.CREATED.value());
         assertThat(response.getContentAsString()).isEqualTo(jsonEsperado);
+    }
+
+    private DadosEndereco dadosEndereco() {
+        return new DadosEndereco(
+                "rua xpto",
+                "bairro",
+                "00000000",
+                "Brasilia",
+                "DF",
+                null,
+                null
+        );
     }
 
 }
