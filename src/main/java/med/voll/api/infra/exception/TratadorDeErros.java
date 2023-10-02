@@ -1,11 +1,8 @@
 package med.voll.api.infra.exception;
 
 import jakarta.persistence.EntityNotFoundException;
-<<<<<<< HEAD
 import med.voll.api.domain.ValidacaoException;
-=======
 import org.springframework.http.HttpStatus;
->>>>>>> e31af11ceef6e8c2acc011292d368b20dbc0f36f
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.security.authentication.BadCredentialsException;
